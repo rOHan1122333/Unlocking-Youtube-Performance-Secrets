@@ -1,33 +1,75 @@
-Unlocking YouTube Performance Secrets | End-to-End Data Analysis + Power BI Visualization
+Unlocking-YouTube-Performance-Secrets/
 
-This repository showcases a complete YouTube performance analysis pipeline — from raw data exploration to interactive visual storytelling using Power BI and Python (VS Code).
 
-📁 What's Included:
-📊 Power BI Dashboard (YouTubeInsights.pbix)
+ 1. Project Folder Structure
+├── 📁 scripts/
+│   ├── feature.py
+│   ├── heatmap.py
+│   ├── pairplot_analysis.py
+│   ├── Predicmodeling.py
+│   ├── test_imports.py
+│   ├── test_process.py
+│   ├── train.py
+│   └── visualization.py
+│
+├── 📁 data/
+│   └── youtube_channel_data.csv
+├── youtube peformance.pbix
+├── README.md
 
-Visualizes KPIs like Total Views, Revenue, and Watch Time
+2. Execution Workflow for the Project
+ Unlocking YouTube Performance Secrets
+A complete data-driven analytics and visualization project using **Python (EDA + modeling)** and **Power BI** to decode YouTube channel performance and drive insights.
+## 📁 Project Structure
 
-Monthly revenue trend, traffic source analysis, top videos by CTR
 
-Screenshots are included in the screenshots/ folder for quick visual preview.
+3.youtube peformance.pbix ← Final Power BI dashboard
+## 🔄 Workflow & Execution Order
+Run these scripts in order for full functionality:
 
-🧪 Python Code (VS Code)
+1. `test_imports.py` — Load data, inspect structure & null values  
+2. `test_process.py` — Clean & parse durations in ISO format  
+3. `pairplot_analysis.py` — Visualize pairwise variable relations  
+4. `heatmap.py` — Analyze correlation matrix (numeric-only)  
+5. `visualization.py` — Histogram for revenue distribution  
+6. `feature.py` — Train Random Forest and plot top 15 features  
+7. `Predicmodeling.py` — Ensure clean data + feature-target split  
+8. `train.py` — Final model build + evaluation (MSE, R²)
 
-The code  script includes:
+---
 
-Data cleaning & preprocessing
+## 📊 Power BI Dashboard
 
-Exploratory Data Analysis (EDA)
+- File: `youtube performance.pbix`
+- Includes:
+  - 📈 KPI Cards (Views, Revenue, Watch Time)
+  - 📊 Monthly Revenue Trend
+  - 🧭 Traffic Source Distribution
+  - 🏆 Top 10 Videos by CTR/Views
+- Screenshot previews in `/screenshots/`
 
-Pairplot analysis using seaborn
+---
 
-Basic modeling for insight generation
+## 🧰 Tools Used
 
-📌 Key Features:
-Clean and insightful visuals crafted in Power BI
+- Python (Pandas, Seaborn, Scikit-learn, Matplotlib)
+- Power BI
+- CSV dataset (`youtube_channel_data.csv`)
 
-Full Python-based data exploration workflow
+---
 
-Easy-to-follow structure for learning or extension
+## ✨ Insights Extracted
 
-Ideal for anyone interested in YouTube analytics, data storytelling, and real-world dashboarding
+- Feature importance showed **Views**, **Subscribers**, and **Average View %** are key drivers of revenue.
+- Power BI dashboard enabled rich visual storytelling for decision-makers.
+- The modeling process evaluated revenue predictions using regression.
+
+---
+
+
+
+
+
+
+
+
